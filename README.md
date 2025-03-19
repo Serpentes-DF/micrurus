@@ -19,10 +19,23 @@ The source code for serpentesdodf website built with NextJS
 npm install
 ```
 
-2. Development Environment: 
+2. Development Server: 
 ```bash
 npm run dev
 ```
+Starts the development server with hot-reloading. Open http://localhost:3000 to view in browser.
+
+3. Production Build
+```bash
+npm run build
+```
+Creates an optimized production build of your application.
+
+4. Production Server
+```bash
+npm start
+```
+Starts the production server (must run npm run build first).
 
 ## Executing Linter:
 ```bash
