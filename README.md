@@ -49,3 +49,56 @@ npm run lint
 3. Commit changes (git commit -m 'Add new feature')
 4. Push to the branch (git push origin feature/new-feature)
 5. Open a Pull Request
+
+### Project Structure
+
+```
+├── public/
+├── src/
+│   ├── app/
+│   │   ├── team/
+│   │   |   └── page.tsx
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/
+│   │   ├── features/
+│   │   ├── layout/
+│   │   │   ├── Footer/
+│   │   │   │   ├── Footer.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── Header/
+|   |   |   |   ├── Header.tsx
+|   |   |   |   └── index.ts
+│   │   │   └── Sidebar/
+|   |   |   |   ├── Header.tsx
+|   |   |   |   └── index.ts
+│   │   └── ui/
+│   │       ├── Button/
+│   │       └── Card/
+│   │           ├── Button.tsx
+│   │           └── index.ts
+│   ├── lib/
+│   ├──styles/
+│   │  ├── themes/
+│   │  ├── globals.css
+│   │  ├── page.module.css
+│   │  └── variables.css
+│   └── utils/
+```
+
+## Directory Structure Overview
+
+### Main Directories
+- `public/` - Static assets
+- `src/` - Source code
+
+### Source Structure
+- `app/` - Next.js App Router pages
+  - `team/` - Team page components
+- `components/` - Reusable components
+  - `features/` - Feature-specific components
+  - `layout/` - Layout components (Footer, Header, Sidebar)
+  - `ui/` - UI components (Button, Card)
+- `lib/` - Library code
+- `styles/` - Styling files
+- `utils/` - Utility functions
