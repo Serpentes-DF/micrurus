@@ -64,7 +64,7 @@ npm run lint
 │   │   ├── features/
 │   │   ├── layout/
 │   │   │   ├── Footer/
-│   │   │   │   ├── Footer.tsx
+│   │   │   │   ├── footer.tsx
 │   │   │   │   └── index.ts
 │   │   │   ├── Header/
 |   |   |   |   ├── Header.tsx
