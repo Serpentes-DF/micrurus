@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
                     <a href="https://www.instagram.com/serpentesdodf/" target="_blank" rel="noopener noreferrer">
                     <Image
                         src="/icons/instagram.svg"
-                        alt="Location"
+                        alt="Instagram"
 
                         width={24}
                         height={24}
@@ -43,14 +43,14 @@ const Footer: React.FC = () => {
                     <a href="https://web.whatsapp.com/phone=556174022773" target="_blank" rel="noopener noreferrer">
                     <Image
                         src="/icons/zapzops.svg"
-                        alt="Location"
+                        alt="zapzops"
                         width={24}
                         height={24}
                     />
                     </a >
                     <Image
                         src="/icons/donate.svg"
-                        alt="Location"
+                        alt="Donate"
                         width={24}
                         height={24}
                     />
