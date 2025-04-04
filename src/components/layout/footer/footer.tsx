@@ -40,10 +40,10 @@ const Footer: React.FC = () => {
                         height={24}
                     />
                     </a>
-                    <a href="https://web.whatsapp.com/phone=556174022773" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/556174022773" target="_blank" rel="noopener noreferrer">
                     <Image
                         src="/icons/zapzops.svg"
-                        alt="zapzops"
+                        alt="WhatsApp"
                         width={24}
                         height={24}
                     />
