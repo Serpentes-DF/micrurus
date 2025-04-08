@@ -35,7 +35,6 @@ const Footer: React.FC = () => {
                     <Image
                         src="/icons/instagram.svg"
                         alt="Instagram"
-
                         width={24}
                         height={24}
                     />
@@ -48,12 +47,14 @@ const Footer: React.FC = () => {
                         height={24}
                     />
                     </a >
+                    <a>
                     <Image
                         src="/icons/donate.svg"
                         alt="Donate"
                         width={24}
                         height={24}
                     />
+                    </a>
                 </div>
             </div>
             <div className={styles.copyright}>
