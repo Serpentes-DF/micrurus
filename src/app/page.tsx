@@ -1,5 +1,12 @@
-export default function Home() {
+import React from 'react';
+import Footer from '@/components/layout/footer/footer';
+const Home: React.FC = () => {
   return (
-  <h1>Home</h1>
+      <div>
+        <h1>Home!</h1>
+        <Footer />
+      </div>
   );
-}
+};
+
+export default Home;
