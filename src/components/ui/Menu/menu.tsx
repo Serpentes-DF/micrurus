@@ -27,7 +27,7 @@ export default function Menu() {
         >
           ☰
         </button>
-        {/* {Menu mobile} */}
+ 
         {isOpen && (
           <nav className={styles.navMobile}>
             <ul className={styles.navMobileLinks}>
@@ -58,7 +58,6 @@ export default function Menu() {
         )}{" "}
       </div>
 
-      {/* {Menu desktop} */}
       <nav className={styles.nav}>
         <ul className={styles.navLinks}>
           <li className={styles.navItem}>
