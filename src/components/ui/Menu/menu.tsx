@@ -8,19 +8,6 @@ import { useState } from "react";
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // useEffect(() => {
-  //     const menuMobile = document.querySelector('.menuMobile');
-  //     const nav = document.querySelector('.nav');
-
-  //     if(menuMobile && nav){
-  //         menuMobile.addEventListener('click', function(){
-  //             console.log("Abre menu");
-  //             nav.classList.toggle('active');
-  //         });
-
-  //     }
-  // }, []);
-
   return (
     <div className={`${styles.menu} ${isOpen ? styles.active : ""}`}>
       <Image
