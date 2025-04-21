@@ -1,0 +1,101 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import styles from "./menu.module.css";
+import { useState } from "react";
+
+export default function Menu() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  // useEffect(() => {
+  //     const menuMobile = document.querySelector('.menuMobile');
+  //     const nav = document.querySelector('.nav');
+
+  //     if(menuMobile && nav){
+  //         menuMobile.addEventListener('click', function(){
+  //             console.log("Abre menu");
+  //             nav.classList.toggle('active');
+  //         });
+
+  //     }
+  // }, []);
+
+  return (
+    <div className={`${styles.menu} ${isOpen ? styles.active : ""}`}>
+      <Image
+        className="logo"
+        src="/logo-menu.png"
+        width={64}
+        height={64}
+        alt="Logo do Serpentes DF"
+      />
+
+      <div className={styles.menuMobile}>
+        <button
+          onClick={() => {
+            setIsOpen(!isOpen);
+          }}
+          className={styles.buttonMenuMobile}
+        >
+          ☰
+        </button>
+        {/* {Menu mobile} */}
+        {isOpen && (
+          <nav className={styles.navMobile}>
+            <ul className={styles.navMobileLinks}>
+              <li className={styles.navItem}>
+                <Link href="/nossa-equipe">NOSSA EQUIPE</Link>
+              </li>
+              <li className={styles.navItem}>
+                <Link href="/eventos">NOSSOS EVENTOS</Link>
+              </li>
+              <li className={styles.navItem}>
+                <Link href="/artigos">ARTIGOS</Link>
+              </li>
+              <li className={styles.navItem}>
+                <Link href="/doe-agora">DOE AGORA</Link>
+              </li>
+              <li className={styles.navItem}>
+                <Link href="/loja">LOJA</Link>
+              </li>
+            </ul>
+
+            <div className={styles.mainLang}>
+              <button className={`${styles.langBtn} ${styles.active}`}>
+                PT
+              </button>
+              <button className={styles.langBtn}>EN</button>
+            </div>
+          </nav>
+        )}{" "}
+      </div>
+
+      {/* {Menu desktop} */}
+      <nav className={styles.nav}>
+        <ul className={styles.navLinks}>
+          <li className={styles.navItem}>
+            <Link href="/nossa-equipe">NOSSA EQUIPE</Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link href="/eventos">NOSSOS EVENTOS</Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link href="/artigos">ARTIGOS</Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link href="/doe-agora">DOE AGORA</Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link href="/loja">LOJA</Link>
+          </li>
+        </ul>
+
+        <div className={styles.mainLang}>
+          <button className={`${styles.langBtn} ${styles.active}`}>PT</button>
+          <button className={styles.langBtn}>EN</button>
+        </div>
+      </nav>
+    </div>
+  );
+}
