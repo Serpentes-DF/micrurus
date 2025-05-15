@@ -1,0 +1,48 @@
+.headerMain {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #fdfcfc;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 68px;
+
+  @media (max-width: 1024px) {
+    min-height: 50vh;
+    gap: 40px;
+  }
+}
+
+.svgFullScreen {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+
+.titlePage {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  font-family: Capriola;
+  font-size: clamp(1.8rem, 4vw, 5vw);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.56px;
+  padding: 0px 100px 0px 100px;
+
+  @media (max-width: 1024px) {
+    margin-top: 180px;
+    padding: 0px;
+  }
+}
+
+.logoHeader {
+  position: relative;
+  width: 250px;
+  height: auto;
+  padding-bottom: 24px;
+}
