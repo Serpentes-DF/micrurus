@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output : "export",
-    images :{
-        path: process.env.NEXT_PUBLIC_BASE_PATH,
+    output: 'export',
+    images: {
+        unoptimized: true,
     }
 };
 
