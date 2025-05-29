@@ -1,9 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-    images: {
-        path: "/micrurus/public",
-    },
+  output : "export",
+    images :{
+        path: process.env.NEXT_PUBLIC_BASE_PATH,
+    }
 };
 
 
