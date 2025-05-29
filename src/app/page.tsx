@@ -1,8 +1,8 @@
 import React from 'react';
 import Footer from '@/components/layout/footer/footer';
-import Header from '@/components/layout/Header/header';
+import Header from '@/components/layout/header/header';
 import Menu from '@/components/ui/Menu/menu';
-import About from '@/components/layout/About/about';
+import About from '@/components/layout/about/about';
 
 const Home: React.FC = () => {
   return (
