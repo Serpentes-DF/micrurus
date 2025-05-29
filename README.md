@@ -67,10 +67,10 @@ npm run lint
 │   │   │   │   ├── footer.tsx
 │   │   │   │   └── index.ts
 │   │   │   ├── Header/
-|   |   |   |   ├── Header.tsx
+|   |   |   |   ├── header.tsx
 |   |   |   |   └── index.ts
 │   │   │   └── Sidebar/
-|   |   |   |   ├── Header.tsx
+|   |   |   |   ├── header.tsx
 |   |   |   |   └── index.ts
 │   │   └── ui/
 │   │       ├── Button/
