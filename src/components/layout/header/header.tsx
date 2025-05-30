@@ -2,6 +2,9 @@ import Image from "next/image";
 import styles from "./header.module.css";
 
 export default function Header() {
+    const logoPath = process.env.NODE_ENV === 'development'
+        ? '/logo-header.svg'
+        : '/micrurus/logo-header.svg';
   return (
     <div className={styles.headerMain}>
       <svg
@@ -23,7 +26,7 @@ export default function Header() {
       </h1>
       <Image
         className={styles.logoHeader}
-        src="/logo-header.svg"
+        src={logoPath}
         width={406}
         height={400}
         alt="Logo Serpentes DF"
