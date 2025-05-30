@@ -6,13 +6,16 @@ import Image from 'next/image';
 
 
 const Footer: React.FC = () => {
+    const logoPath = process.env.NODE_ENV === 'development'
+        ? ""
+        : "/micrurus";
     return (
         <footer className={styles.footer}>
             <div className={styles.container}>
                 <div className={styles.contactInfo}>
                     <div className={styles.inline}>
                         <Image
-                            src="/icons/location_on.svg"
+                            src={logoPath+"/icons/location_on.svg"}
                             alt="Location"
                             width={24}
                             height={24}
@@ -21,7 +24,7 @@ const Footer: React.FC = () => {
                     </div>
                     <div className={styles.inline}>
                         <Image
-                            src="/icons/mail.svg"
+                            src={logoPath + "/icons/mail.svg"}
                             alt="Mail"
                             width={24}
                             height={24}
@@ -33,7 +36,7 @@ const Footer: React.FC = () => {
                 <div className={styles.socialMedia}>
                     <a href="https://www.instagram.com/serpentesdodf/" target="_blank" rel="noopener noreferrer">
                     <Image
-                        src="/icons/instagram.svg"
+                        src={logoPath + "/icons/instagram.svg"}
                         alt="Instagram"
                         width={24}
                         height={24}
@@ -41,7 +44,7 @@ const Footer: React.FC = () => {
                     </a>
                     <a href="https://wa.me/556174022773" target="_blank" rel="noopener noreferrer">
                     <Image
-                        src="/icons/zapzops.svg"
+                        src={logoPath+"/icons/zapzops.svg"}
                         alt="WhatsApp"
                         width={24}
                         height={24}
@@ -49,7 +52,7 @@ const Footer: React.FC = () => {
                     </a >
                     <a>
                     <Image
-                        src="/icons/donate.svg"
+                        src={logoPath+"/icons/donate.svg"}
                         alt="Donate"
                         width={24}
                         height={24}

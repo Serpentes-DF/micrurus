@@ -7,12 +7,15 @@ import { useState } from "react";
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
+  const logoPath = process.env.NODE_ENV === 'development'
+      ? ""
+      : "/micrurus";
 
   return (
     <div className={`${styles.menu} ${isOpen ? styles.active : ""}`}>
       <Image
         className="logo"
-        src="/logo-menu.png"
+        src={logoPath+"/logo-menu.png"}
         width={64}
         height={64}
         alt="Logo do Serpentes DF"
