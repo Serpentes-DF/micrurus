@@ -1,0 +1,8 @@
+.DivMain {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* margin-top: 128px; */
+}

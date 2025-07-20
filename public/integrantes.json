@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Clara Silveira Rosa",
+    "cargo": 1,
+    "profissao": "Cientista da Computação",
+    "foto": "Clara Silveira Rosa.jpeg"
+  },
+  {
+    "name": "Bianca Peixoto",
+    "cargo": 1,
+    "profissao": "Cientista da Computação",
+    "foto": "Bianca Peixoto.jpeg"
+  },
+  {
+    "name": "Gabriela Cecília",
+    "cargo": 1,
+    "profissao": "Cientista da Computação",
+    "foto": "Gabriela Cecília.jpeg"
+  },
+  {
+    "name": "Giovanna Lissa Cambuí",
+    "cargo": 1,
+    "profissao": "Cientista da Computação",
+    "foto": "Giovanna Lissa Cambuí.jpeg"
+  },
+  {
+    "name": "Livia Galli",
+    "cargo": 1,
+    "profissao": "Cientista da Computação",
+    "foto": "Livia Galli.jpeg"
+  },
+  {
+    "name": "Nathalie Citeli",
+    "cargo": 1,
+    "profissao": "Cientista da Computação",
+    "foto": "Nathalie Citeli.JPG"
+  },
+  {
+    "name": "Nayra Gualberto",
+    "cargo": 1,
+    "profissao": "Cientista da Computação",
+    "foto": "Nayra Gualberto.HEIC"
+  },
+  {
+    "name": "Pílade Filho",
+    "cargo": 1,
+    "profissao": "Cientista da Computação",
+    "foto": "Pílade Filho.jpeg"
+  },
+  {
+    "name": "Rômullo Viana",
+    "cargo": 1,
+    "profissao": "Cientista da Computação",
+    "foto": "Rômullo Viana.jpeg"
+  }
+]

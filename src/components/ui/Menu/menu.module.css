@@ -4,8 +4,10 @@
   padding: 32px;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0px;
+  background-color: #22A389;
+  z-index: 1000;
 }
 
 .nav {
