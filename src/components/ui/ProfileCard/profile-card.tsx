@@ -8,10 +8,10 @@ interface ProfileCardProps {
   name: string;
   foto?: string;
   profissao?: string;
-  cargo?: number;
+  tipo_de_integrante?: string;
 }
 
-export default function ProfileCard({ profileType }: { profileType: number }) {
+export default function ProfileCard({ profileType }: { profileType: string }) {
   const [profile, setProfile] = useState<ProfileCardProps[]>([]);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ export default function ProfileCard({ profileType }: { profileType: number }) {
   return (
     <>
       {profile
-        .filter((pessoa) => pessoa.cargo === profileType)
+        .filter((pessoa) => pessoa.tipo_de_integrante === profileType)
         .map((pessoa, index) => (
           <div
             key={index}

@@ -2,19 +2,12 @@
   width: 100vw;
   min-height: 100vh;
   background-color: #fdfcfc;
-position: relative;
- 
-
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: center;
   gap: 68px;
-     /*  position: absolute;
-     position: relative; 
-   top: 0px;
-    z-index: -1;*/
-   
 
   @media (max-width: 1024px) {
     min-height: 50vh;

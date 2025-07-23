@@ -1,7 +1,7 @@
 import ProfileCard from "@/components/ui/ProfileCard/profile-card";
 import styles from "./gridCard.module.css";
 
-export default function GridCard({ profileType }: { profileType: number }) {
+export default function GridCard({ profileType }: { profileType: string }) {
   return (
     <div className={styles.DivMain}>
       <ProfileCard profileType={profileType} />
