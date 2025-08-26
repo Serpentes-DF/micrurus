@@ -5,7 +5,7 @@ import styles from "./profile-card.module.css";
 import { useEffect, useState } from "react";
 
 interface ProfileCardProps {
-  name: string;
+  nome: string;
   foto?: string;
   profissao?: string;
   tipo_de_integrante?: string;
@@ -42,11 +42,11 @@ export default function ProfileCard({ profileType }: { profileType: string }) {
               src={"./integrantes/" + pessoa.foto}
               width={250}
               height={250}
-              alt={pessoa.name}
+              alt={pessoa.nome}
             />
             <div className={styles.groupText}>
               <p className={`${styles.textoBase} ${styles.nome}`}>
-                {pessoa.name}
+                {pessoa.nome}
               </p>
 
               <p className={`${styles.textoBase} ${styles.profissao}`}>
