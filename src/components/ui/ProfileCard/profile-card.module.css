@@ -1,0 +1,34 @@
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.imagem {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.groupText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.textoBase {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.nome {
+  font-weight: 700;
+}
+
+.profissao {
+  font-weight: 500;
+}

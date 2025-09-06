@@ -1,0 +1,56 @@
+[
+  {
+    "nome": "Clara Silveira Rosa",
+    "tipo_de_integrante": "voluntario",
+    "profissao": "Cientista da Computação",
+    "foto": "Clara Silveira Rosa.jpeg"
+  },
+  {
+    "nome": "Bianca Peixoto",
+    "tipo_de_integrante": "voluntario",
+    "profissao": "Cientista da Computação",
+    "foto": "Bianca Peixoto.jpeg"
+  },
+  {
+    "nome": "Gabriela Cecília",
+    "tipo_de_integrante": "voluntario",
+    "profissao": "Cientista da Computação",
+    "foto": "Gabriela Cecília.jpeg"
+  },
+  {
+    "nome": "Giovanna Lissa Cambuí",
+    "tipo_de_integrante": "voluntario",
+    "profissao": "Cientista da Computação",
+    "foto": "Giovanna Lissa Cambuí.jpeg"
+  },
+  {
+    "nome": "Livia Galli",
+    "tipo_de_integrante": "voluntario",
+    "profissao": "Cientista da Computação",
+    "foto": "Livia Galli.jpeg"
+  },
+  {
+    "nome": "Nathalie Citeli",
+    "tipo_de_integrante": "voluntario",
+    "profissao": "Cientista da Computação",
+    "foto": "Nathalie Citeli.JPG"
+  },
+  {
+    "nome": "Nayra Gualberto",
+    "tipo_de_integrante": "voluntario",
+    "profissao": "Cientista da Computação",
+    "foto": "Nayra Gualberto.HEIC"
+  },
+  {
+    "nome": "Pílade Filho",
+    "tipo_de_integrante": "voluntario",
+    "profissao": "Cientista da Computação",
+    "foto": "Pílade Filho.jpeg"
+  },
+  {
+    "nome": "Rômullo Viana",
+    "tipo_de_integrante": "voluntario",
+    "profissao": "Cientista da Computação",
+    "foto": "Rômullo Viana.jpeg"
+  }
+]

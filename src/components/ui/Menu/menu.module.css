@@ -1,11 +1,13 @@
 .menu {
   width: 100%;
+  position: fixed;
+  top: 0;
   display: flex;
   padding: 32px;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  top: 0px;
+  background-color: #22A389;
+  z-index: 9999;
 }
 
 .nav {

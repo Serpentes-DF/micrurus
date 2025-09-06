@@ -1,0 +1,11 @@
+.Title {
+  color: #22a389;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-top: 192px; /*128px (altura do menu) + 64 (espaçamento entre os componentes) */
+  margin-bottom: 64px;
+}
