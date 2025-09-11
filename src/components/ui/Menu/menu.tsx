@@ -35,10 +35,10 @@ export default function Menu() {
           <nav className={styles.navMobile}>
             <ul className={styles.navMobileLinks}>
               <li className={styles.navItem}>
-                <Link href="/nossa-equipe">NOSSA EQUIPE</Link>
+                <Link href="/our-team">NOSSA EQUIPE</Link>
               </li>
               <li className={styles.navItem}>
-                <Link href="/eventos">NOSSOS EVENTOS</Link>
+                <Link href="/events">NOSSOS EVENTOS</Link>
               </li>
               <li className={styles.navItem}>
                 <Link href="/artigos">ARTIGOS</Link>
@@ -64,7 +64,7 @@ export default function Menu() {
       <nav className={styles.nav}>
         <ul className={styles.navLinks}>
           <li className={styles.navItem}>
-            <Link href="/nossa-equipe">NOSSA EQUIPE</Link>
+            <Link href="/our-team">NOSSA EQUIPE</Link>
           </li>
           <li className={styles.navItem}>
             <Link href="/eventos">NOSSOS EVENTOS</Link>
