@@ -3,7 +3,7 @@
 import Image from "next/image";
 import styles from "./profile-card.module.css";
 import { useEffect, useState } from "react";
-
+import member from '../../../../public/integrantes.json'
 interface ProfileCardProps {
   nome: string;
   foto?: string;
@@ -17,9 +17,7 @@ export default function ProfileCard({ profileType }: { profileType: string }) {
   useEffect(() => {
     async function carregarDados() {
       try {
-        const res = await fetch("/integrantes.json");
-        const data = await res.json();
-        setProfile(data);
+        setProfile(member);
       } catch (erro) {
         console.error("Erro ao carregar dados:", erro);
       }
