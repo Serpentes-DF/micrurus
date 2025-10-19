@@ -1,56 +1,57 @@
+
 [
+  {
+    "nome": "Bianca Amaral",
+    "tipo_de_integrante": "voluntario",
+    "quem_e": "Bianca Amaral é graduanda de Medicina Veterinária pela Universidade Católica de Brasília, com experiência em clínica e manejo de animais silvestres e exóticos, envolvida em projetos de conservação e educação ambiental. Atualmente atua em projetos que  incluem resgate, reabilitação e conservação de animais silvestres, contribuindo de maneira significativa para a promoção da saúde animal e conservação da biodiversidade.  Além da pesquisa e cuidados veterinários, atua como fotógrafa de vida selvagem, divulgando suas imagens da fauna brasileira como mecanismo de educação ambiental e conservação.",
+    "foto": "Bianca Peixoto.jpeg"
+  },
   {
     "nome": "Clara Silveira Rosa",
     "tipo_de_integrante": "voluntario",
-    "profissao": "Cientista da Computação",
+    "quem_e": "Graduanda em Ciências Biológicas pela Universidade Católica de Brasília. Atualmente participa do programa de Iniciação Científica da UCB, realizando uma chave pictórica das serpentes peçonhentas que ocorrem no Distrito Federal. Além disso, é estagiária da coleção zoológica da Universidade Católica de Brasília, realizando pesquisas e revisões taxonômicas, mais focado em serpentes. No projeto Serpentes do DF, participa ativamente da movimentação do instagram, divulgação e montagem do guia ilustrado, além de auxiliar nas demandas burocráticas.",
     "foto": "Clara Silveira Rosa.jpeg"
-  },
-  {
-    "nome": "Bianca Peixoto",
-    "tipo_de_integrante": "voluntario",
-    "profissao": "Cientista da Computação",
-    "foto": "Bianca Peixoto.jpeg"
   },
   {
     "nome": "Gabriela Cecília",
     "tipo_de_integrante": "voluntario",
-    "profissao": "Cientista da Computação",
+    "quem_e": "Bacharel em Ciências Biológicas pela Universidade Paulista. Atualmente faz mestrado em Zoologia na Universidade de Brasília, com foco no estudo das relações de humanos com serpentes. No Serpentes do DF, é responsável por ajudar com as publicações do Instagram.",
     "foto": "Gabriela Cecília.jpeg"
   },
   {
-    "nome": "Giovanna Lissa Cambuí",
+    "nome": "Giovanna L. Cambuí-Milhomens",
     "tipo_de_integrante": "voluntario",
-    "profissao": "Cientista da Computação",
+    "quem_e": "Bacharel em Ciências Biológicas pela Universidade Católica de Brasília. Atualmente faz mestrado em Zoologia pela Universidade de Brasília, focado na revisão taxonômica da serpente Rhachidelus brazili. Faz pesquisas relacionadas à taxonomia e conservação de serpentes do Cerrado e da Amazônia. No Serpentes do DF, é responsável por fazer a revisão das espécies do guia do projeto.",
     "foto": "Giovanna Lissa Cambuí.jpeg"
   },
   {
     "nome": "Livia Galli",
     "tipo_de_integrante": "voluntario",
-    "profissao": "Cientista da Computação",
+    "quem_e": "Bacharel em Ciências Biológicas pela Universidade Católica de Brasília. Atualmente faz Licenciatura em Biologia pela Universidade Cruzeiro do Sul. Já realizou pesquisas relacionadas à descrição de glândulas cefálicas da espécie Pseudablabes agassizii e levantamento da herpetofauna do Distrito Federal. No projeto Serpentes do DF, é responsável pela revisão das espécies do guia.",
     "foto": "Livia Galli.jpeg"
   },
   {
     "nome": "Nathalie Citeli",
     "tipo_de_integrante": "voluntario",
-    "profissao": "Cientista da Computação",
+    "quem_e": "Cientista da Computação",
     "foto": "Nathalie Citeli.JPG"
   },
   {
     "nome": "Nayra Gualberto",
     "tipo_de_integrante": "voluntario",
-    "profissao": "Cientista da Computação",
+    "quem_e": "Cientista da Computação",
     "foto": "Nayra Gualberto.HEIC"
   },
   {
-    "nome": "Pílade Filho",
+    "nome": "Pílade Bergamaschi",
     "tipo_de_integrante": "voluntario",
-    "profissao": "Cientista da Computação",
+    "quem_e": "Bacharel em Ciências Biológicas pela Universidade Federal de Mato Grosso do Sul. Atualmente faz mestrado em Zoologia pela Universidade de Brasília, com o trabalho focado em descrever a morfologia craniana, da mandíbula e de vértebras cervicais (atlas e axis) de Helicops hagmanni e Helicops polylepis. Faz pesquisas relacionadas à taxonomia. No Serpentes do DF, é responsável pela revisão do guia e ajuda com as publicações do Instagram.",
     "foto": "Pílade Filho.jpeg"
   },
   {
     "nome": "Rômullo Viana",
     "tipo_de_integrante": "voluntario",
-    "profissao": "Cientista da Computação",
+    "quem_e": "Graduando em medicina veterinária pela Universidade Católica de Brasília, com experiência em clínica e manejo de pequenos animais. Atualmente é auxiliar veterinário no Hospital Veterinário Seres na Asa Norte, colaborando com cuidados intensivos dos animais internados, auxílio no manejo de animais em consultórios e auxílio em cirurgias. Além de ser estagiário do projeto Serpentes do DF, onde atua tabulando dados adquiridos de sites e redes sociais referentes a registros de serpentes encontradas por todo DF por cidadãos.",
     "foto": "Rômullo Viana.jpeg"
   }
 ]
