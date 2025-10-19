@@ -49,7 +49,7 @@ export default function Menu() {
                 <Link href="/doe-agora">DOE AGORA</Link>
               </li>
               <li className={styles.navItem}>
-                <Link href="/loja">LOJA</Link>
+                <Link href="/store">LOJA</Link>
               </li>
             </ul>
 
@@ -78,7 +78,7 @@ export default function Menu() {
             <Link href="/doe-agora">DOE AGORA</Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/loja">LOJA</Link>
+            <Link href="/store">LOJA</Link>
           </li>
         </ul>
 

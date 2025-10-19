@@ -1,0 +1,12 @@
+.divStorePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    }
+
+.iframeStore {
+    width: 90%;
+    height: 100vh;
+    border: none;
+    }
