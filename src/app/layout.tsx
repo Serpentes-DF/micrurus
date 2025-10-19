@@ -25,7 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+        <html lang="pt-BR">
+      <head>
+        <meta name="color-scheme" content="light" />
+        <meta name="theme-color" content="#ffffff" />
+      </head>
     <body className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}`}>
     {children}
     </body>
