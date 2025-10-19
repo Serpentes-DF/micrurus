@@ -13,6 +13,7 @@ export default function Menu() {
 
   return (
     <div className={`${styles.menu} ${isOpen ? styles.active : ""}`}>
+      <Link href="/">
       <Image
         className="logo"
         src={logoPath+"/logo-menu.png"}
@@ -20,6 +21,7 @@ export default function Menu() {
         height={64}
         alt="Logo do Serpentes DF"
       />
+      </Link>
 
       <div className={styles.menuMobile}>
         <button
