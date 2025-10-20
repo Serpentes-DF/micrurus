@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 22px;
+  gap: 1em;
 }
 
 .imagem {
@@ -14,6 +14,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  justify-content: center;
   text-align: center;
 }
 
@@ -29,6 +30,6 @@
   font-weight: 700;
 }
 
-.quem_e {
+.quem-e {
   font-weight: 500;
 }

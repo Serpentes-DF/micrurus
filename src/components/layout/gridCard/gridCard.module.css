@@ -1,7 +1,9 @@
 .DivMain {
   display: flex;
   flex-direction: row;
-  gap: 64px;
+  gap: 1em;
+  padding: auto;
   justify-content: center;
+  align-content: center;
   flex-wrap: wrap;
 }

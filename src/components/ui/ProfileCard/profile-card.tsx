@@ -33,7 +33,6 @@ export default function ProfileCard({ profileType }: { profileType: string }) {
           <div
             key={index}
             className={styles.card}
-            style={{ position: "relative" }}
           >
             <Image
               className={styles.imagem}
@@ -48,7 +47,7 @@ export default function ProfileCard({ profileType }: { profileType: string }) {
               </p>
 
               <p className={`${styles.textoBase} ${styles.quem_e}`}
-              style={{ position: "relative", width: "500px", textAlign: "justify" }}
+              style={{ textAlign: "justify", padding: "0 3%", textIndent: "2em",width:"100%", maxWidth: "450px" }}
               >
                 {pessoa.quem_e}
               </p>
