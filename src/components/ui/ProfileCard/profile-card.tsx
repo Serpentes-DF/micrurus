@@ -48,7 +48,7 @@ export default function ProfileCard({ profileType }: { profileType: string }) {
               </p>
 
               <p className={`${styles.textoBase} ${styles.quem_e}`}
-                style={{ textAlign: "justify", padding: "0 3%", textIndent: "2em", width: "100%", maxWidth: "500px" }}
+                style={{ textAlign: "justify", padding: "0 3%", textIndent: "2em", width: "100%", maxWidth: "500px"}}
               >
                 {pessoa.quem_e}
               </p>

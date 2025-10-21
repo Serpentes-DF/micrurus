@@ -28,7 +28,7 @@ export default function RootLayout({
         <html lang="pt-BR">
       <head>
         <meta name="color-scheme" content="light" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#fdfcfc" />
       </head>
     <body className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}`}>
     {children}
