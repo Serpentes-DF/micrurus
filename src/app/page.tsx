@@ -1,17 +1,19 @@
-import React from 'react';
-import Footer from '@/components/layout/footer/footer';
-import Header from '@/components/layout/header/header';
-import Menu from '@/components/ui/Menu/menu';
-import About from '@/components/layout/about/about';
+import React from "react";
+import Footer from "@/components/layout/footer/footer";
+import Header from "@/components/layout/header/header";
+import Menu from "@/components/ui/Menu/menu";
+import About from "@/components/layout/about/about";
+import Registros from "@/components/layout/Registros/registros";
 
 const Home: React.FC = () => {
   return (
-      <div style={{position: 'relative'}}>
-        <Header />
-        <Menu />
-        <About/>
-        <Footer />
-      </div>
+    <div style={{ position: "relative" }}>
+      <Header />
+      <Menu />
+      <About />
+      <Registros />
+      <Footer />
+    </div>
   );
 };
 
