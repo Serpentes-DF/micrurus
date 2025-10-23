@@ -47,5 +47,23 @@
     "tipo_de_integrante": "voluntario",
     "quem_e": "Bacharel em Ciências Biológicas pela Universidade Federal de Mato Grosso do Sul. Atualmente faz mestrado em Zoologia pela Universidade de Brasília, com o trabalho focado em descrever a morfologia craniana, da mandíbula e de vértebras cervicais (atlas e axis) de Helicops hagmanni e Helicops polylepis. Faz pesquisas relacionadas à taxonomia. No Serpentes do DF, é responsável pela revisão do guia e ajuda com as publicações do Instagram.",
     "foto": "Pílade Filho.jpeg"
+  },
+  {
+    "nome": "Rômullo Viana",
+    "tipo_de_integrante": "voluntario",
+    "profissao": "Cientista da Computação",
+    "foto": "Rômullo Viana.jpeg"
+  },
+    {
+    "nome": "Heloise Katharine",
+    "tipo_de_integrante": "voluntario",
+    "profissao": "Cientista da Computação",
+    "foto": "Heloise Katharine.jpg"
+  },
+      {
+    "nome": "José Antônio",
+    "tipo_de_integrante": "voluntario",
+    "profissao": "Cientista da Computação",
+    "foto": "José Antônio.jpeg"
   }
 ]
