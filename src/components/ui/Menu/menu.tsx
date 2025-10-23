@@ -13,6 +13,7 @@ export default function Menu() {
 
   return (
     <div className={`${styles.menu} ${isOpen ? styles.active : ""}`}>
+      <Link href="/">
       <Image
         className="logo"
         src={logoPath+"/logo-menu.png"}
@@ -20,6 +21,7 @@ export default function Menu() {
         height={64}
         alt="Logo do Serpentes DF"
       />
+      </Link>
 
       <div className={styles.menuMobile}>
         <button
@@ -37,7 +39,7 @@ export default function Menu() {
               <li className={styles.navItem}>
                 <Link href="/our-team">NOSSA EQUIPE</Link>
               </li>
-              <li className={styles.navItem}>
+              {/* <li className={styles.navItem}>
                 <Link href="/events">NOSSOS EVENTOS</Link>
               </li>
               <li className={styles.navItem}>
@@ -45,9 +47,9 @@ export default function Menu() {
               </li>
               <li className={styles.navItem}>
                 <Link href="/doe-agora">DOE AGORA</Link>
-              </li>
+              </li> */}
               <li className={styles.navItem}>
-                <Link href="/loja">LOJA</Link>
+                <Link href="/store">LOJA</Link>
               </li>
             </ul>
 
@@ -66,7 +68,7 @@ export default function Menu() {
           <li className={styles.navItem}>
             <Link href="/our-team">NOSSA EQUIPE</Link>
           </li>
-          <li className={styles.navItem}>
+          {/* <li className={styles.navItem}>
             <Link href="/eventos">NOSSOS EVENTOS</Link>
           </li>
           <li className={styles.navItem}>
@@ -74,9 +76,9 @@ export default function Menu() {
           </li>
           <li className={styles.navItem}>
             <Link href="/doe-agora">DOE AGORA</Link>
-          </li>
+          </li> */}
           <li className={styles.navItem}>
-            <Link href="/loja">LOJA</Link>
+            <Link href="/store">LOJA</Link>
           </li>
         </ul>
 

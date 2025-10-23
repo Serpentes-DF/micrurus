@@ -7,7 +7,7 @@ import member from '../../../../public/integrantes.json'
 interface ProfileCardProps {
   nome: string;
   foto?: string;
-  profissao?: string;
+  quem_e?: string;
   tipo_de_integrante?: string;
 }
 
@@ -47,8 +47,10 @@ export default function ProfileCard({ profileType }: { profileType: string }) {
                 {pessoa.nome}
               </p>
 
-              <p className={`${styles.textoBase} ${styles.profissao}`}>
-                {pessoa.profissao}
+              <p className={`${styles.textoBase} ${styles.quem_e}`}
+                style={{ textAlign: "justify", padding: "0 3%", textIndent: "2em", width: "100%", maxWidth: "500px"}}
+              >
+                {pessoa.quem_e}
               </p>
             </div>
           </div>
