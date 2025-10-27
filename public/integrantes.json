@@ -1,4 +1,3 @@
-
 [
   {
     "nome": "Bianca Amaral",
@@ -49,18 +48,12 @@
     "foto": "Pílade Filho.jpeg"
   },
   {
-    "nome": "Rômullo Viana",
-    "tipo_de_integrante": "voluntario",
-    "profissao": "Cientista da Computação",
-    "foto": "Rômullo Viana.jpeg"
-  },
-    {
     "nome": "Heloise Katharine",
     "tipo_de_integrante": "voluntario",
     "profissao": "Cientista da Computação",
     "foto": "Heloise Katharine.jpg"
   },
-      {
+  {
     "nome": "José Antônio",
     "tipo_de_integrante": "voluntario",
     "profissao": "Cientista da Computação",
