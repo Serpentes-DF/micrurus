@@ -1,15 +1,16 @@
 .headerMain {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background-color: #fdfcfc;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   gap: 68px;
 
   @media (max-width: 1024px) {
+    justify-content: end;
     min-height: 50vh;
     gap: 40px;
   }

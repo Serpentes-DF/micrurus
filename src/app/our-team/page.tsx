@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/footer/footer";
 import GridCard from "@/components/layout/gridCard/gridCard";
 import Menu from "@/components/ui/Menu/menu";
 import Title from "@/components/ui/Title/title";
@@ -10,6 +11,7 @@ export default function ourTeam() {
       <Menu />
       <Title title={"Nossa Equipe"} />
       <GridCard profileType={profileType} />
+      <Footer />
     </div>
   );
 }

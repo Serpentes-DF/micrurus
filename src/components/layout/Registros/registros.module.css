@@ -1,0 +1,88 @@
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 120px 120px;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 100px;
+  background: rgba(126, 164, 132, 0.7);
+  padding: 28px 80px 28px 80px;
+}
+
+.Title {
+  padding: 20px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.02px;
+}
+
+.Text {
+  color: #000;
+  text-align: center;
+  font-family: "Josefin Slab";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  width: 50%;
+}
+
+.ImagemContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1181 / 977;
+  margin: 72px 0px 72px 0px;
+}
+
+.Imagem {
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .Main {
+    padding: 0px 64px 64px;
+  }
+  .Text {
+    width: 80%;
+  }
+  .Container {
+    padding: 28px 68px 28px 68px;
+  }
+}
+
+@media (max-width: 900px) {
+  .ImagemContainer {
+    margin: 48px 0px 48px 0px;
+  }
+  .Container {
+    padding: 28px 48px 28px 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ImagemContainer {
+    margin: 0px 0px 20px 0px;
+  }
+  .Container {
+    padding: 28px 38px 28px 38px;
+    border-radius: 28px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Main {
+    padding: 0px 32px 32px;
+    gap: 32px;
+  }
+}
