@@ -16,7 +16,7 @@ export default function Registros() {
         </div>
         <p className={styles.Text}>
           Gostou desses registros? Tem muito mais lá no nosso Instagram! Dá uma
-          olhada e aproveita pra mandar o seu também.<a href="https://www.instagram.com/serpentesdodf/" target="_blank">Ver no Instagram 📷</a>
+          olhada e aproveita pra mandar o seu também.<a href="https://www.instagram.com/serpentesdodf/" target="_blank">Ver no Instagram</a> 📷
         </p>
       </div>
     </div>
