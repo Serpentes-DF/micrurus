@@ -9,10 +9,13 @@
   align-items: center;
   gap: 68px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1500px) {
     justify-content: end;
-    min-height: 50vh;
     gap: 40px;
+  }
+
+  @media (max-width: 800px) {
+    min-height: 50vh;
   }
 }
 
