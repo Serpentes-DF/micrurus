@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono , Inter} from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "../styles/globals.css";
 import React from "react";
 
@@ -17,22 +17,22 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-        <html lang="pt-BR">
+    <html lang="pt-BR">
       <head>
         <meta name="color-scheme" content="light" />
         <meta name="theme-color" content="#fdfcfc" />
       </head>
-    <body className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}`}>
-    {children}
-    </body>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
