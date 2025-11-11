@@ -51,12 +51,14 @@
     "nome": "Heloise Katharine",
     "tipo_de_integrante": "voluntario",
     "profissao": "Cientista da Computação",
+    "quem_e": "Bacharel em Ciência da Computação pelo Instituto Federal de Brasília. Atualmente está trabalhando em um projeto com dados geográficos, onde aplica técnicas de análise e visualização de informações espaciais. No Serpentes do DF, é responsável pelo front-end do site e pela prototipação de interfaces.",
     "foto": "Heloise Katharine.jpg"
   },
   {
     "nome": "José Antônio",
     "tipo_de_integrante": "voluntario",
     "profissao": "Cientista da Computação",
+    "quem_e":"Bacharel em Ciência da computação pelo Instituto Federal de Brasília, Engenheiro de Software na Stone e voluntário no Serpentes do DF. Atua no Serpentes do DF para a construção de uma estrutura tecnológica para divulgação e armazenamento seguro dos dados.  ",
     "foto": "José Antônio.jpeg"
   }
 ]
