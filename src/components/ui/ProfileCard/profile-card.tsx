@@ -3,7 +3,7 @@
 import Image from "next/image";
 import styles from "./profile-card.module.css";
 import { useEffect, useState } from "react";
-import member from '../../../../public/integrantes.json'
+import member from "../../../../public/integrantes.json";
 interface ProfileCardProps {
   nome: string;
   foto?: string;
@@ -46,10 +46,7 @@ export default function ProfileCard({ profileType }: { profileType: string }) {
               <p className={`${styles.textoBase} ${styles.nome}`}>
                 {pessoa.nome}
               </p>
-
-              <p className={`${styles.textoBase} ${styles.quem_e}`}
-                style={{ textAlign: "justify", padding: "0 3%", textIndent: "2em", width: "100%", maxWidth: "500px"}}
-              >
+              <p className={`${styles.textoBase} ${styles.quem_e}`}>
                 {pessoa.quem_e}
               </p>
             </div>

@@ -3,6 +3,23 @@
   align-items: center;
   flex-direction: column;
   gap: 22px;
+  max-width: 500px;
+  border: 2px solid #22a389;
+  margin: 2px normal blue;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    margin: 64px 64px;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    margin: 0px 32px 0px 32px;
+  }
 }
 
 .imagem {
@@ -30,5 +47,16 @@
 }
 
 .quem_e {
-  font-weight: 500;
+  padding: 0 3%;
+  width: 100%;
+  max-width: 500px;
+  text-indent: 2em;
+  color: #000;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.72px;
 }
