@@ -78,8 +78,8 @@
 }
 
 .menuMobile {
+  display: none;
   gap: 24px;
-  display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: flex-end;
@@ -131,5 +131,9 @@
 
   .mainLang button {
     color: #000000;
+  }
+
+  .menuMobile {
+    display: flex;
   }
 }
