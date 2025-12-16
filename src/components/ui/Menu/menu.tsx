@@ -7,21 +7,46 @@ import { useState } from "react";
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
-  const logoPath = process.env.NODE_ENV === 'development'
-      ? ""
-      : "/micrurus";
+  const logoPath = process.env.NODE_ENV === "development" ? "" : "/micrurus";
 
   return (
-    <div className={`${styles.menu} ${isOpen ? styles.active : ""}`}>
-      <Link href="/">
-      <Image
-        className="logo"
-        src={logoPath+"/logo-menu.png"}
-        width={64}
-        height={64}
-        alt="Logo do Serpentes DF"
-      />
-      </Link>
+    <div>
+      <div className={`${styles.menu} ${isOpen ? styles.active : ""}`}>
+        <Link href="/">
+          <Image
+            className="logo"
+            src={logoPath + "/logo-menu.png"}
+            width={64}
+            height={64}
+            alt="Logo do Serpentes DF"
+          />
+        </Link>
+
+        <nav className={styles.nav}>
+          <ul className={styles.navLinks}>
+            <li className={styles.navItem}>
+              <Link href="/our-team">NOSSA EQUIPE</Link>
+            </li>
+            {/* <li className={styles.navItem}>
+            <Link href="/eventos">NOSSOS EVENTOS</Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link href="/artigos">ARTIGOS</Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link href="/doe-agora">DOE AGORA</Link>
+          </li> */}
+            <li className={styles.navItem}>
+              <Link href="/store">LOJA</Link>
+            </li>
+          </ul>
+
+          <div className={styles.mainLang}>
+            <button className={`${styles.langBtn} ${styles.active}`}>PT</button>
+            <button className={styles.langBtn}>EN</button>
+          </div>
+        </nav>
+      </div>
 
       <div className={styles.menuMobile}>
         <button
@@ -32,7 +57,6 @@ export default function Menu() {
         >
           ☰
         </button>
- 
         {isOpen && (
           <nav className={styles.navMobile}>
             <ul className={styles.navMobileLinks}>
@@ -62,31 +86,6 @@ export default function Menu() {
           </nav>
         )}{" "}
       </div>
-
-      <nav className={styles.nav}>
-        <ul className={styles.navLinks}>
-          <li className={styles.navItem}>
-            <Link href="/our-team">NOSSA EQUIPE</Link>
-          </li>
-          {/* <li className={styles.navItem}>
-            <Link href="/eventos">NOSSOS EVENTOS</Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href="/artigos">ARTIGOS</Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href="/doe-agora">DOE AGORA</Link>
-          </li> */}
-          <li className={styles.navItem}>
-            <Link href="/store">LOJA</Link>
-          </li>
-        </ul>
-
-        <div className={styles.mainLang}>
-          <button className={`${styles.langBtn} ${styles.active}`}>PT</button>
-          <button className={styles.langBtn}>EN</button>
-        </div>
-      </nav>
     </div>
   );
 }

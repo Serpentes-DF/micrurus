@@ -4,4 +4,6 @@
   gap: 64px;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 64px;
+      
 }
