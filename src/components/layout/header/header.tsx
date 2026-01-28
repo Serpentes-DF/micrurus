@@ -3,8 +3,8 @@ import styles from "./header.module.css";
 
 export default function Header() {
     const logoPath = process.env.NODE_ENV === 'development'
-        ? '/LOGO-sem-frase-e-sem-fundo.png'
-        : '/micrurus/LOGO-sem-frase-e-sem-fundo.png';
+        ? '/LOGO-sem-frase-e-sem-fundo.webp'
+        : '/micrurus/LOGO-sem-frase-e-sem-fundo.webp';
   return (
     <div className={styles.headerMain}>
       <svg

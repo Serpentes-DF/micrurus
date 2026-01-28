@@ -5,12 +5,16 @@ import Title from "@/components/ui/Title/title";
 
 export default function ourTeam() {
 
-  const profileType = "voluntario";
+  const membrosAtuais = "voluntario";
+  const membrosAnteriores = "ex-voluntario";
+  
   return (
     <div>
       <Menu />
       <Title title={"Nossa Equipe"} />
-      <GridCard profileType={profileType} />
+      <GridCard profileType={membrosAtuais} />
+      <Title title={"Membros Anteriores"} />
+       <GridCard profileType={membrosAnteriores} /> 
       <Footer />
     </div>
   );
