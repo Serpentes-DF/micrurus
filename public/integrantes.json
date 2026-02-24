@@ -7,7 +7,7 @@
   },
   {
     "nome": "Clara Silveira Rosa",
-    "tipo_de_integrante": "voluntario",
+    "tipo_de_integrante": "ex-voluntario",
     "quem_e": "Graduanda em Ciências Biológicas pela Universidade Católica de Brasília. Atualmente participa do programa de Iniciação Científica da UCB, realizando uma chave pictórica das serpentes peçonhentas que ocorrem no Distrito Federal. Além disso, é estagiária da coleção zoológica da Universidade Católica de Brasília, realizando pesquisas e revisões taxonômicas, mais focado em serpentes. No projeto Serpentes do DF, participa ativamente da movimentação do instagram, divulgação e montagem do guia ilustrado, além de auxiliar nas demandas burocráticas.",
     "foto": "Clara Silveira Rosa.jpeg"
   },
@@ -32,13 +32,13 @@
   {
     "nome": "Nathalie Citeli",
     "tipo_de_integrante": "voluntario",
-    "quem_e": "Cientista da Computação",
+    "quem_e": "Graduada em Licenciatura em Ciências Biológicas pela Universidade Federal do Rio de Janeiro (UFRJ), Mestre em Ciências pela Fundação Oswaldo Cruz (FIOCRUZ) e Doutora em Zoologia pela Universidade de Brasília (UnB). Atualmente sou professora da Universidade Católica de Brasília (UCB). Na mesma instituição, atuo como curadora da Coleção Zoológica. Sou credenciada no Programa de Pós Graduação em Zoologia da UnB (PGZoo/UnB) desde 2024 onde oriento estudantes de mestrado acadêmico. Me dedico a pesquisas com Taxonomia, Morfologia e Sistemática de Répteis, com enfoque em Serpentes. No Serpentes do DF, é responsável pela supervisão do projeto.",
     "foto": "Nathalie Citeli.JPG"
   },
   {
     "nome": "Nayra Gualberto",
     "tipo_de_integrante": "voluntario",
-    "quem_e": "Cientista da Computação",
+    "quem_e": "Bióloga formada pela Universidade Católica de Brasília. Atualmente é mestranda em Ciências Ambientais pela Universidade de Brasília, onde estuda Isótopos Estáveis em Serpentes. Possui pesquisas voltadas a taxonomia, ecologia e conservação de serpentes. No Serpentes do DF, é responsável pela coordenação do projeto.",
     "foto": "Nayra Gualberto.HEIC"
   },
   {
@@ -58,7 +58,13 @@
     "nome": "José Antônio",
     "tipo_de_integrante": "voluntario",
     "profissao": "Cientista da Computação",
-    "quem_e":"Bacharel em Ciência da computação pelo Instituto Federal de Brasília, Engenheiro de Software na Stone e voluntário no Serpentes do DF. Atua no Serpentes do DF para a construção de uma estrutura tecnológica para divulgação e armazenamento seguro dos dados.  ",
+    "quem_e": "Bacharel em Ciência da computação pelo Instituto Federal de Brasília, Engenheiro de Software na Stone e voluntário no Serpentes do DF. Atua no Serpentes do DF para a construção de uma estrutura tecnológica para divulgação e armazenamento seguro dos dados.  ",
     "foto": "José Antônio.jpeg"
+  },
+  {
+    "nome": "Rômullo Viana",
+    "tipo_de_integrante": "ex-voluntario",
+    "quem_e": "Graduando em medicina veterinária pela Universidade Católica de Brasília, com experiência em clínica e manejo de pequenos animais. Atualmente é auxiliar veterinário no Hospital Veterinário Seres na Asa Norte, colaborando com cuidados intensivos dos animais internados, auxílio no manejo de animais em consultórios e auxílio em cirurgias. Além de ser estagiário do projeto Serpentes do DF, onde atua tabulando dados adquiridos de sites e redes sociais referentes a registros de serpentes encontradas por todo DF por cidadãos.",
+    "foto": "Rômullo Viana.jpeg"
   }
 ]

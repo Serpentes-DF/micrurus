@@ -27,6 +27,9 @@ export default function RootLayout({
       <head>
         <meta name="color-scheme" content="light" />
         <meta name="theme-color" content="#fdfcfc" />
+
+        <title>Serpentes do DF</title>
+        <meta name="description" content="O projeto Serpentes do Distrito Federal é uma atividade de ciência cidadã, que tem como objetivo monitorar as Serpentes do DF através de registros da comunidade."/>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}`}
