@@ -136,5 +136,7 @@
   .menuMobile {
     display: flex;
     position: absolute;
+    right: 0;
+    width: auto;
   }
 }
