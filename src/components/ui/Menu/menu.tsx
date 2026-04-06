@@ -19,6 +19,7 @@ export default function Menu() {
             width={64}
             height={64}
             alt="Logo do Serpentes DF"
+            style={{ cursor: "pointer" }}
           />
         </Link>
 
