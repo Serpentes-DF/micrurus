@@ -223,7 +223,7 @@ Aguardo confirmação do pedido. Obrigado! 🙌
         <div className={styles.imageContainer}>
           <div className={styles.carousel}>
             <Image
-              src={product.imagens[currentImageIndex]}
+              src={"." + product.imagens[currentImageIndex]}
               alt={`${product.nome} - imagem ${currentImageIndex + 1}`}
               className={styles.image}
               width={300}
@@ -431,7 +431,7 @@ Aguardo confirmação do pedido. Obrigado! 🙌
             </button>
             <Image
               className={styles.sizeGuideImage}
-              src="/produtos/guia-de-tamanhos.png"
+              src="../produtos/guia-de-tamanhos.png"
               alt="Tabela de medidas das blusas"
               width={1000}
               height={800}
