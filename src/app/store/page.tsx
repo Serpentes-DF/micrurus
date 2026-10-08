@@ -1,26 +1,14 @@
 "use client";
-import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Menu from "@/components/ui/Menu/menu";
 import Title from "@/components/ui/Title/title";
 import styles from "./store.module.css";
 import Footer from "@/components/layout/footer/footer";
 import ProductCard from "@/components/layout/ProductCard/productCard";
-import OrderModal from "@/components/layout/orderModal/orderModal";
 import produtos from "@/data/produtos.json";
 
 export default function StorePage() {
-  type Product = {
-    id: number;
-    nome: string;
-    preco: number;
-    imagens: string[];
-    tipo: string;
-    tamanho?: string[];
-    cores?: string[];
-  };
-
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-  const [selectedColorIndex, setSelectedColorIndex] = useState<number>(0);
+  const router = useRouter();
 
   return (
     <>
@@ -40,20 +28,11 @@ export default function StorePage() {
               key={produto.id}
               product={produto}
               onBuy={(colorIndex) => {
-                setSelectedProduct(produto);
-                setSelectedColorIndex(colorIndex);
+                router.push(`/store/order?product=${produto.id}&color=${colorIndex}`);
               }}
             />
           ))}
         </div>
-
-        {selectedProduct && (
-          <OrderModal
-            product={selectedProduct}
-            selectedColorIndex={selectedColorIndex}
-            onClose={() => setSelectedProduct(null)}
-          />
-        )}
       </div>
       <Footer />
     </>

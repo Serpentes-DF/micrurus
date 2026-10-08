@@ -9,6 +9,7 @@ type Product = {
   imagens: string[];
   tipo: string;
   tamanho?: string[];
+  // tamanho?: "0";
   cores?: string[];
 };
 
@@ -16,14 +17,13 @@ type OrderForm = {
   nome: string;
   telefone: string;
   endereco: string;
-  tamanho: string;
+  tamanho?: "0";
   quantidade: number;
 };
 
 type OrderModalProps = {
   product: Product;
   selectedColorIndex: number;
-  onClose: () => void;
 };
 
 type FormErrors = {
@@ -37,7 +37,6 @@ type FormErrors = {
 export default function OrderModal({
   product,
   selectedColorIndex,
-  onClose,
 }: OrderModalProps) {
   const [currentImageIndex, setCurrentImageIndex] =
     useState(selectedColorIndex);
@@ -50,6 +49,7 @@ export default function OrderModal({
   });
 
   const [errors, setErrors] = useState<FormErrors>({});
+  const [isSizeGuideOpen, setIsSizeGuideOpen] = useState(false);
 
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -202,19 +202,15 @@ Olá! 😊 Gostaria de fazer um pedido:
 Aguardo confirmação do pedido. Obrigado! 🙌
     `;
     // ADD NÚMERO
-    const phoneNumber = "5561999999";
+    const phoneNumber = "5561994643173";
 
     const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank");
-
     window.open(url, "_blank");
   };
 
   return (
-    <div className={styles.MainOrderModal}>
+    <main className={styles.MainOrderModal}>
       <div className={styles.modal}>
-        <h2 className={styles.title}>{product.nome}</h2>
-
         <div className={styles.imageContainer}>
           <div className={styles.carousel}>
             <Image
@@ -260,134 +256,181 @@ Aguardo confirmação do pedido. Obrigado! 🙌
           </div>
         </div>
 
-        {product.cores && product.cores.length > 0 && (
-          <div className={styles.colors}>
-            <span className={styles.colorLabel}>Cores:</span>
-            <div className={styles.colorList}>
-              {product.cores.map((color, index) => (
-                <button
-                  key={color}
-                  className={`${styles.colorOption} ${
-                    currentImageIndex === index ? styles.colorSelected : ""
-                  }`}
-                  onClick={() => goToColor(index)}
-                  aria-label={`Selecionar cor ${color}`}
-                  style={{ backgroundColor: getColorValue(color) }}
-                  title={color}
-                >
-                  {currentImageIndex === index && (
-                    <span className={styles.checkmark}>✓</span>
-                  )}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
+        <div className={styles.details}>
+          <h2 className={styles.title}>{product.nome}</h2>
 
-        <form className={styles.formContainer}>
-          <div className={styles.inputGroup}>
-            <label className={styles.label}>Nome</label>
-            <input
-              className={`${styles.input} ${errors.nome ? styles.inputError : ""}`}
-              placeholder="Digite seu nome completo"
-              value={form.nome}
-              onChange={handleNomeChange}
-            />
-            {errors.nome && (
-              <span className={styles.errorMessage}>{errors.nome}</span>
-            )}
-          </div>
-
-          <div className={styles.inputGroup}>
-            <label className={styles.label}>Telefone</label>
-            <input
-              className={`${styles.input} ${errors.telefone ? styles.inputError : ""}`}
-              placeholder="(61) 99999-9999"
-              value={form.telefone}
-              onChange={handleTelefoneChange}
-            />
-            {errors.telefone && (
-              <span className={styles.errorMessage}>{errors.telefone}</span>
-            )}
-          </div>
-
-          <div className={styles.inputGroup}>
-            <label className={styles.label}>Endereço</label>
-            <input
-              className={`${styles.input} ${errors.endereco ? styles.inputError : ""}`}
-              placeholder="Rua, número, complemento"
-              value={form.endereco}
-              onChange={(e) => setForm({ ...form, endereco: e.target.value })}
-            />
-            {errors.endereco && (
-              <span className={styles.errorMessage}>{errors.endereco}</span>
-            )}
-          </div>
-
-          <div className={styles.inputGroup}>
-            <label className={styles.label}>Tamanho</label>
-            <select
-              className={`${styles.select} ${errors.tamanho ? styles.inputError : ""}`}
-              value={form.tamanho}
-              onChange={(e) => setForm({ ...form, tamanho: e.target.value })}
-            >
-              <option value="">Escolha uma opção</option>
-              {Array.isArray(product.tamanho) &&
-                product.tamanho.map((opt: string) => (
-                  <option key={opt} value={opt}>
-                    {opt}
-                  </option>
+          {product.cores && product.cores.length > 0 && (
+            <div className={styles.colors}>
+              <span className={styles.colorLabel}>Cores:</span>
+              <div className={styles.colorList}>
+                {product.cores.map((color, index) => (
+                  <button
+                    key={color}
+                    className={`${styles.colorOption} ${
+                      currentImageIndex === index ? styles.colorSelected : ""
+                    }`}
+                    onClick={() => goToColor(index)}
+                    aria-label={`Selecionar cor ${color}`}
+                    style={{ backgroundColor: getColorValue(color) }}
+                    title={color}
+                  >
+                    {currentImageIndex === index && (
+                      <span className={styles.checkmark}>✓</span>
+                    )}
+                  </button>
                 ))}
-            </select>
-            {errors.tamanho && (
-              <span className={styles.errorMessage}>{errors.tamanho}</span>
-            )}
-          </div>
+              </div>
+            </div>
+          )}
 
-          <div className={styles.inputGroup}>
-            <label className={styles.label}>Quantidade</label>
-            <div className={styles.quantityControl}>
+          <form className={styles.formContainer}>
+            <div className={styles.inputGroup}>
+              <label className={styles.label}>Nome</label>
+              <input
+                className={`${styles.input} ${errors.nome ? styles.inputError : ""}`}
+                placeholder="Digite seu nome completo"
+                value={form.nome}
+                onChange={handleNomeChange}
+              />
+              {errors.nome && (
+                <span className={styles.errorMessage}>{errors.nome}</span>
+              )}
+            </div>
+
+            <div className={styles.inputGroup}>
+              <label className={styles.label}>Telefone</label>
+              <input
+                className={`${styles.input} ${errors.telefone ? styles.inputError : ""}`}
+                placeholder="(61) 99999-9999"
+                value={form.telefone}
+                onChange={handleTelefoneChange}
+              />
+              {errors.telefone && (
+                <span className={styles.errorMessage}>{errors.telefone}</span>
+              )}
+            </div>
+
+            <div className={styles.inputGroup}>
+              <label className={styles.label}>Endereço</label>
+              <input
+                className={`${styles.input} ${errors.endereco ? styles.inputError : ""}`}
+                placeholder="Rua, número, complemento"
+                value={form.endereco}
+                onChange={(e) => setForm({ ...form, endereco: e.target.value })}
+              />
+              {errors.endereco && (
+                <span className={styles.errorMessage}>{errors.endereco}</span>
+              )}
+            </div>
+
+            {product.tipo === "Camisa" ? (
+              <div className={styles.inputGroup}>
+                <label className={styles.label}>Tamanho</label>
+                <select
+                  className={`${styles.select} ${errors.tamanho ? styles.inputError : ""}`}
+                  value={form.tamanho}
+                  onChange={(e) =>
+                    setForm({ ...form, tamanho: e.target.value })
+                  }
+                >
+                  <option value="">Escolha uma opção</option>
+                  {Array.isArray(product.tamanho) &&
+                    product.tamanho.map((opt: string) => (
+                      <option key={opt} value={opt}>
+                        {opt}
+                      </option>
+                    ))}
+                </select>
+                {errors.tamanho && (
+                  <span className={styles.errorMessage}>{errors.tamanho}</span>
+                )}
+                {product.tipo === "Camisa" && (
+                  <button
+                    type="button"
+                    className={styles.sizeGuideLink}
+                    onClick={() => setIsSizeGuideOpen(true)}
+                  >
+                    Ver guia de tamanhos das blusas
+                  </button>
+                )}
+              </div>
+            ) : (
+              <>
+                
+                {/* {form.tamanho = "0"} */}
+               
+              </>
+            )}
+
+            <div className={styles.inputGroup}>
+              <label className={styles.label}>Quantidade</label>
+              <div className={styles.quantityControl}>
+                <button
+                  type="button"
+                  className={styles.quantityButton}
+                  onClick={decrementQuantidade}
+                  aria-label="Diminuir quantidade"
+                >
+                  −
+                </button>
+                <span className={styles.quantityValue}>{form.quantidade}</span>
+                <button
+                  type="button"
+                  className={styles.quantityButton}
+                  onClick={incrementQuantidade}
+                  aria-label="Aumentar quantidade"
+                >
+                  +
+                </button>
+              </div>
+              {errors.quantidade && (
+                <span className={styles.errorMessage}>{errors.quantidade}</span>
+              )}
+            </div>
+
+            <div className={styles.buttonContainer}>
               <button
                 type="button"
-                className={styles.quantityButton}
-                onClick={decrementQuantidade}
-                aria-label="Diminuir quantidade"
+                className={styles.submitButton}
+                onClick={handleSubmit}
               >
-                −
-              </button>
-              <span className={styles.quantityValue}>{form.quantidade}</span>
-              <button
-                type="button"
-                className={styles.quantityButton}
-                onClick={incrementQuantidade}
-                aria-label="Aumentar quantidade"
-              >
-                +
+                Adicionar ao carrinho
               </button>
             </div>
-            {errors.quantidade && (
-              <span className={styles.errorMessage}>{errors.quantidade}</span>
-            )}
-          </div>
-
-          <div className={styles.buttonContainer}>
-            <button
-              type="button"
-              className={styles.submitButton}
-              onClick={handleSubmit}
-            >
-              Enviar Pedido
-            </button>
-            <button
-              type="button"
-              className={styles.closeButton}
-              onClick={onClose}
-            >
-              Fechar
-            </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
-    </div>
+
+      {isSizeGuideOpen && (
+        <div
+          className={styles.sizeGuideOverlay}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Guia de tamanhos das blusas"
+          onClick={() => setIsSizeGuideOpen(false)}
+        >
+          <div
+            className={styles.sizeGuideModal}
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button
+              type="button"
+              className={styles.sizeGuideClose}
+              onClick={() => setIsSizeGuideOpen(false)}
+              aria-label="Fechar guia de tamanhos"
+            >
+              ×
+            </button>
+            <Image
+              className={styles.sizeGuideImage}
+              src="/produtos/guia-de-tamanhos.png"
+              alt="Tabela de medidas das blusas"
+              width={1000}
+              height={800}
+            />
+          </div>
+        </div>
+      )}
+    </main>
   );
 }
