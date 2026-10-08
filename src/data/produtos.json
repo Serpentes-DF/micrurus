@@ -4,8 +4,8 @@
     "nome": "Camisa Família Viperídeos",
     "preco": 85.0,
     "imagens": [
-      "/produtos/camisas/familias/viperideos/camisa-viperideos-marfim.png",
-      "/produtos/camisas/familias/viperideos/camisa-viperideos-preta.png"
+      "./produtos/camisas/familias/viperideos/camisa-viperideos-marfim.png",
+      "./produtos/camisas/familias/viperideos/camisa-viperideos-preta.png"
     ],
     "tipo": "Camisa",
     "tamanho": ["P", "M", "G", "GG"],
@@ -16,8 +16,8 @@
     "nome": "Camisa Família Boídeos",
     "preco": 85.0,
     "imagens": [
-      "/produtos/camisas/familias/boideos/camisa-boideos-marfim.png",
-      "/produtos/camisas/familias/boideos/camisa-boideos-preta.png"
+      "./produtos/camisas/familias/boideos/camisa-boideos-marfim.png",
+      "./produtos/camisas/familias/boideos/camisa-boideos-preta.png"
     ],
     "tipo": "Camisa",
     "tamanho": ["P", "M", "G", "GG"],
@@ -28,8 +28,8 @@
     "nome": "Camisa Família Corredeiras",
     "preco": 85.0,
     "imagens": [
-      "/produtos/camisas/familias/corredeiras/camisa-corredeiras-marfim.png",
-      "/produtos/camisas/familias/corredeiras/camisa-corredeiras-preta.png"
+      "./produtos/camisas/familias/corredeiras/camisa-corredeiras-marfim.png",
+      "./produtos/camisas/familias/corredeiras/camisa-corredeiras-preta.png"
     ],
     "tipo": "Camisa",
     "tamanho": ["P", "M", "G", "GG"],
@@ -40,8 +40,8 @@
     "nome": "Camisa Família Falsas Corais",
     "preco": 85.0,
     "imagens": [
-      "/produtos/camisas/familias/falsas-corais/camisa-falsas-corais-marfim.png",
-      "/produtos/camisas/familias/falsas-corais/camisa-falsas-corais-preta.png"
+      "./produtos/camisas/familias/falsas-corais/camisa-falsas-corais-marfim.png",
+      "./produtos/camisas/familias/falsas-corais/camisa-falsas-corais-preta.png"
     ],
     "tipo": "Camisa",
     "tamanho": ["P", "M", "G", "GG"],
@@ -52,8 +52,8 @@
     "nome": "Camisa Espécie Crassus",
     "preco": 65.0,
     "imagens": [
-      "/produtos/camisas/especies/crassus/camisa-crassus-marfim.png",
-      "/produtos/camisas/especies/crassus/camisa-crassus-preta.png"
+      "./produtos/camisas/especies/crassus/camisa-crassus-marfim.png",
+      "./produtos/camisas/especies/crassus/camisa-crassus-preta.png"
     ],
     "tipo": "Camisa",
     "tamanho": ["P", "M", "G", "GG"],
@@ -64,8 +64,8 @@
     "nome": "Camisa Espécie Frontalis",
     "preco": 65.0,
     "imagens": [
-      "/produtos/camisas/especies/frontalis/camisa-frontalis-marfim.png",
-      "/produtos/camisas/especies/frontalis/camisa-frontalis-preta.png"
+      "./produtos/camisas/especies/frontalis/camisa-frontalis-marfim.png",
+      "./produtos/camisas/especies/frontalis/camisa-frontalis-preta.png"
     ],
     "tipo": "Camisa",
     "tamanho": ["P", "M", "G", "GG"],
@@ -76,8 +76,8 @@
     "nome": "Camisa Espécie Marmotatus",
     "preco": 65.0,
     "imagens": [
-      "/produtos/camisas/especies/marmotatus/camisa-marmotatus-marfim.png",
-      "/produtos/camisas/especies/marmotatus/camisa-marmotatus-preta.png"
+      "./produtos/camisas/especies/marmotatus/camisa-marmotatus-marfim.png",
+      "./produtos/camisas/especies/marmotatus/camisa-marmotatus-preta.png"
     ],
     "tipo": "Camisa",
     "tamanho": ["P", "M", "G", "GG"],
@@ -87,7 +87,7 @@
     "id": 8,
     "nome": "Caneca Personalizada",
     "preco": 39.9,
-    "imagens": ["/produtos/canecas/caneca1.png"],
+    "imagens": ["./produtos/canecas/caneca1.png"],
     "tipo": "Caneca"
   },
   {
@@ -95,8 +95,8 @@
     "nome": "Adesivo Serpente Viva",
     "preco": 3.0,
     "imagens": [
-      "/produtos/adesivos/adesivo-serpente-viva-branco.png",
-      "/produtos/adesivos/adesivo-serpente-viva-marfim.png"
+      "./produtos/adesivos/adesivo-serpente-viva-branco.png",
+      "./produtos/adesivos/adesivo-serpente-viva-marfim.png"
     ],
     "tipo": "Adesivo",
     "cores": ["branco","marfim" ]
@@ -106,8 +106,8 @@
     "nome": "Adesivo Mais Respeito",
     "preco": 3.0,
     "imagens": [
-      "/produtos/adesivos/adesivo-mais-respeito-preto.png",
-      "/produtos/adesivos/adesivo-mais-respeito-branco.png"
+      "./produtos/adesivos/adesivo-mais-respeito-preto.png",
+      "./produtos/adesivos/adesivo-mais-respeito-branco.png"
     ],
     "tipo": "Adesivo",
     "cores": ["preto", "branco"]
@@ -117,8 +117,8 @@
     "nome": "Adesivo Cerrado Vivo",
     "preco": 3.0,
     "imagens": [
-      "/produtos/adesivos/adesivo-cerrado-vivo-verde.png",
-      "/produtos/adesivos/adesivo-cerrado-vivo-branco.png"
+      "./produtos/adesivos/adesivo-cerrado-vivo-verde.png",
+      "./produtos/adesivos/adesivo-cerrado-vivo-branco.png"
     ],
     "tipo": "Adesivo", 
     "cores": ["verde", "branco"]
@@ -128,8 +128,8 @@
     "nome": "Adesivo Cobra",
     "preco": 3.0,
     "imagens": [
-      "/produtos/adesivos/adesivo-cobra-branco.png",
-      "/produtos/adesivos/adesivo-cobra-verde.png"
+      "./produtos/adesivos/adesivo-cobra-branco.png",
+      "./produtos/adesivos/adesivo-cobra-verde.png"
     ],
     "tipo": "Adesivo",
     "cores": ["branco", "verde"]
@@ -138,56 +138,56 @@
     "id": 13,
     "nome": "Botton Boídeos",
     "preco": 5.0,
-    "imagens": ["/produtos/bottons/boideos/botton-boideos-1.png"],
+    "imagens": ["./produtos/bottons/boideos/botton-boideos-1.png"],
     "tipo": "Botton"
   },
   {
     "id": 14,
     "nome": "Botton Boídeos",
     "preco": 5.0,
-    "imagens": ["/produtos/bottons/boideos/botton-boideos-2.png"],
+    "imagens": ["./produtos/bottons/boideos/botton-boideos-2.png"],
     "tipo": "Botton"
   },
   {
     "id": 15,
     "nome": "Botton Boídeos",
     "preco": 5.0,
-    "imagens": ["/produtos/bottons/boideos/botton-boideos-3.png"],
+    "imagens": ["./produtos/bottons/boideos/botton-boideos-3.png"],
     "tipo": "Botton"
   },
   {
     "id": 16,
     "nome": "Botton Viperídeos",
     "preco": 5.0,
-    "imagens": ["/produtos/bottons/viperideos/botton-viperideos-1.png"],
+    "imagens": ["./produtos/bottons/viperideos/botton-viperideos-1.png"],
     "tipo": "Botton"
   },
   {
     "id": 17,
     "nome": "Botton Viperídeos",
     "preco": 5.0,
-    "imagens": ["/produtos/bottons/viperideos/botton-viperideos-2.png"],
+    "imagens": ["./produtos/bottons/viperideos/botton-viperideos-2.png"],
     "tipo": "Botton"
   },
   {
     "id": 18,
     "nome": "Botton Viperídeos",
     "preco": 5.0,
-    "imagens": ["/produtos/bottons/viperideos/botton-viperideos-3.png"],
+    "imagens": ["./produtos/bottons/viperideos/botton-viperideos-3.png"],
     "tipo": "Botton"
   },
   {
     "id": 19,
     "nome": "Botton Viperídeos",
     "preco": 5.0,
-    "imagens": ["/produtos/bottons/viperideos/botton-viperideos-4.png"],
+    "imagens": ["./produtos/bottons/viperideos/botton-viperideos-4.png"],
     "tipo": "Botton"
   },
   {
     "id": 20,
     "nome": "Botton Serpentes do DF",
     "preco": 5.0,
-    "imagens": ["/produtos/bottons/serpentes-df/botton-serpentes-df-1.png"],
+    "imagens": ["./produtos/bottons/serpentes-df/botton-serpentes-df-1.png"],
     "tipo": "Botton"
   }
 ]
