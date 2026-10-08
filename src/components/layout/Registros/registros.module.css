@@ -72,6 +72,9 @@
   .Container {
     padding: 28px 48px 28px 48px;
   }
+  .ImageContainer {
+    margin: 42px 0px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -79,8 +82,15 @@
     margin: 0px 0px 20px 0px;
   }
   .Container {
-    padding: 28px 38px 28px 38px;
+    padding: 28px 12px;
     border-radius: 28px;
+  }
+  .Title {
+    font-size: 24px;
+  }
+  .Text {
+    width: 90%;
+    margin-bottom: 10px;
   }
 }
 
