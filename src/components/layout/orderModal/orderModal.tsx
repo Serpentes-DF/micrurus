@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./orderModal.module.css";
 
@@ -17,7 +17,7 @@ type OrderForm = {
   nome: string;
   telefone: string;
   endereco: string;
-  tamanho?: "0";
+  tamanho: "" | "0" | "P" | "M" | "G" | "GG";
   quantidade: number;
 };
 
@@ -208,6 +208,15 @@ Aguardo confirmação do pedido. Obrigado! 🙌
     window.open(url, "_blank");
   };
 
+  useEffect(() => {
+    if (product.tipo !== "Camisa") {
+      setForm((prev) => ({
+        ...prev,
+        tamanho: "0",
+      }));
+    }
+  }, [product]);
+
   return (
     <main className={styles.MainOrderModal}>
       <div className={styles.modal}>
@@ -323,17 +332,22 @@ Aguardo confirmação do pedido. Obrigado! 🙌
               )}
             </div>
 
-            {product.tipo === "Camisa" ? (
+            {product.tipo === "Camisa" && (
               <div className={styles.inputGroup}>
                 <label className={styles.label}>Tamanho</label>
+
                 <select
                   className={`${styles.select} ${errors.tamanho ? styles.inputError : ""}`}
                   value={form.tamanho}
                   onChange={(e) =>
-                    setForm({ ...form, tamanho: e.target.value })
+                    setForm({
+                      ...form,
+                      tamanho: e.target.value as OrderForm["tamanho"],
+                    })
                   }
                 >
                   <option value="">Escolha uma opção</option>
+
                   {Array.isArray(product.tamanho) &&
                     product.tamanho.map((opt: string) => (
                       <option key={opt} value={opt}>
@@ -341,25 +355,19 @@ Aguardo confirmação do pedido. Obrigado! 🙌
                       </option>
                     ))}
                 </select>
+
                 {errors.tamanho && (
                   <span className={styles.errorMessage}>{errors.tamanho}</span>
                 )}
-                {product.tipo === "Camisa" && (
-                  <button
-                    type="button"
-                    className={styles.sizeGuideLink}
-                    onClick={() => setIsSizeGuideOpen(true)}
-                  >
-                    Ver guia de tamanhos das blusas
-                  </button>
-                )}
+
+                <button
+                  type="button"
+                  className={styles.sizeGuideLink}
+                  onClick={() => setIsSizeGuideOpen(true)}
+                >
+                  Ver guia de tamanhos das blusas
+                </button>
               </div>
-            ) : (
-              <>
-                
-                {/* {form.tamanho = "0"} */}
-               
-              </>
             )}
 
             <div className={styles.inputGroup}>
