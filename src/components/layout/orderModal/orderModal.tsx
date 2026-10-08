@@ -202,7 +202,7 @@ Olá! 😊 Gostaria de fazer um pedido:
 Aguardo confirmação do pedido. Obrigado! 🙌
     `;
     // ADD NÚMERO
-    const phoneNumber = "5561994643173";
+    const phoneNumber = "556191969335";
 
     const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
